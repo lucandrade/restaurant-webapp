@@ -15,7 +15,7 @@
     "build:assets": "cp -r src/fonts dist & cp node_modules/font-awesome/fonts/* dist/fonts & cp -r src/images dist",
     "dev:assets": "cp -r src/fonts server & cp node_modules/font-awesome/fonts/* server/fonts & cp -r src/images server",
     "dev": "npm run dev:js & npm run dev:css & npm run dev:html & npm run dev:assets",
-    "build": "rm -rf ./dist && mkdir dist && npm run build:js & npm run build:css & npm run build:html & npm run build:assets",
+    "build": "rm -rf ./dist && mkdir dist && npm run build:js & npm run build:css & npm run build:html & npm run build:assets & PORT=80 PROD=1 node start.js",
     "watch:js": "nodemon --watch src -e js -x \"npm run dev:js\"",
     "watch:css": "nodemon --watch src -e scss -x \"npm run dev:css\"",
     "watch:html": "nodemon --watch src -e html -x \"npm run dev:html\"",
