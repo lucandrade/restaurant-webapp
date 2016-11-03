@@ -20,7 +20,8 @@
     "watch:css": "nodemon --watch src -e scss -x \"npm run dev:css\"",
     "watch:html": "nodemon --watch src -e html -x \"npm run dev:html\"",
     "watch": "npm run watch:css & npm run watch:html & npm run watch:js",
-    "start": "npm run clean && sleep 2 && npm run dev & npm run watch & node start.js"
+    "start": "npm run clean && sleep 2 && npm run dev & npm run watch & node start.js",
+    "live": "NODE_ENV='production' PORT=8080 PROD=1 node start.js"
   },
   "dependencies": {
     "axios": "^0.15.2",
