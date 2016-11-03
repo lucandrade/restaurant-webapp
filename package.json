@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf ./server && mkdir server",
-    "build:js": "./node_modules/.bin/browserify src/js/app.js -o dist/app.min.js -t [ babelify --presets [ es2015 react ] ] -p [ minifyify --no-map --uglify ]",
+    "build:js": "NODE_ENV='production' ./node_modules/.bin/browserify src/js/app.js -o dist/app.min.js -t [ babelify --presets [ es2015 react ] ] -p [ minifyify --no-map --uglify ]",
     "dev:js": "./node_modules/.bin/browserify src/js/app.js -o server/app.min.js -d -t [ babelify --presets [ es2015 react ] ]",
     "build:css": "node-sass --output-style compressed --include-path src/scss --include-path node_modules/font-awesome/scss src/scss/index.scss dist/app.min.css",
     "dev:css": "node-sass --sourceMap server/app.min.css.map --include-path src/scss --include-path node_modules/font-awesome/scss src/scss/index.scss server/app.min.css",
