@@ -3,7 +3,7 @@
 const hosts = {
     dev: ['localhost'],
     homolog: ['parkme.coffeecupdev.com'],
-    prod: ['parkme.com.br']
+    prod: ['54.214.109.179']
 }
 
 export default {

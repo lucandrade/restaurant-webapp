@@ -15,8 +15,8 @@ switch (Env.get()) {
         server_url = '';
         break;
     case 'prod':
-        api_url = '';
-        server_url = '';
+        api_url = '//54.214.109.179:3000/';
+        server_url = '//54.214.109.179:3000/';
         break;
 }
 
