@@ -1,0 +1,13 @@
+h1.title, h2.title, h3.title, h4.title {
+    font-weight: 100;
+    font-size: 2em;
+    margin: 0;
+    margin-bottom: 20px;
+    .icon {
+        float: right;
+        font-size: .8em;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

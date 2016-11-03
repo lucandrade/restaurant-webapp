@@ -3,4 +3,8 @@ $login-bg: #EAEAEA;
 $success: #4CAF50;
 $success-hover: darken($success, 10%);
 
+$error: #a94442;
+$error-hover: darken($error, 10%);
+
 $muted: #b3b3b3;
+$text: darken($muted, 20%);

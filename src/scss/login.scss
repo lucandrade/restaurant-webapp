@@ -28,6 +28,12 @@ $login-width: 360px;
                 padding: 15px;
                 box-sizing: border-box;
                 font-size: 14px;
+
+                &:invalid {
+                    @include placeholder {
+                        color: $error;
+                    }
+                }
             }
 
             button {
@@ -45,7 +51,7 @@ $login-width: 360px;
                 cursor: pointer;
             }
 
-            button:hover,.form button:active,.form button:focus {
+            button:hover, .form button:active, .form button:focus {
                 background: $success-hover;
             }
 
